@@ -1,10 +1,10 @@
 /**
- * service.js - Polished for Tizen 8.0/9.0
+ * service.js - Background Logic for King Krispy
  */
 (function() {
     const chromeUA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
 
-    // 1. SET IDENTITY BEFORE PAGE LOAD
+    // 1. IDENTITY SPOOFING
     try {
         if (tizen.websetting) {
             tizen.websetting.setUserAgentString(chromeUA, () => {
@@ -19,6 +19,6 @@
         try { tizen.tvinputdevice.registerKey(k); } catch(e) {}
     });
 
-    // 3. FORCE CPU/SCREEN ON
+    // 3. FORCE SCREEN ON
     try { tizen.power.request("SCREEN", "SCREEN_NORMAL"); } catch(e) {}
 })();
