@@ -1,0 +1,16 @@
+{
+  "name": "gemini-ultra-tv",
+  "version": "4.0.0",
+  "packageType": "mods",
+  "appName": "Gemini Ultra",
+  "websiteURL": "https://gemini.google.com/app",
+  "main": "injector.js",
+  "serviceFile": "service.js",
+  "evaluateScriptOnDocumentStart": true,
+  "privileges": [
+    "http://tizen.org/privilege/tv.inputdevice",
+    "http://tizen.org/privilege/power",
+    "http://tizen.org/privilege/internet"
+  ],
+  "keys": ["ColorF0Red", "ColorF1Green", "ColorF2Yellow", "ColorF3Blue", "MediaPlayPause"]
+}
